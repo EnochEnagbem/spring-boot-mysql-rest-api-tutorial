@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>easy-notes</name>
-	<description>Rest API for a Simple Note Taking Application</description>
+	<description>Rest API for a Simple Note-Taking Application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -62,6 +62,14 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>my-maven-server</id>
+			<name>My Maven Repository</name>
+			<url>https://my-maven-repo.com/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
 
 
 </project>
