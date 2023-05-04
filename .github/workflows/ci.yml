@@ -1,12 +1,10 @@
-name: CI
+name: JUnit Test
 
-on:
-  push:
-    branches: [ master ]
+on: [push, pull_request]
 
 jobs:
-  build-and-test:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -20,5 +18,5 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    - name: Run tests with Maven
+    - name: Run tests
       run: mvn test
