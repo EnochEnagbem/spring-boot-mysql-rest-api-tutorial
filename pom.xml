@@ -63,13 +63,5 @@
 		</plugins>
 	</build>
 
-	<distributionManagement>
-		<repository>
-			<id>my-maven-server</id>
-			<name>My Maven Repository</name>
-			<url>https://my-maven-repo.com/repository/maven-releases/</url>
-		</repository>
-	</distributionManagement>
-
 
 </project>
